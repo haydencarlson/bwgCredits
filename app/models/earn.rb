@@ -1,2 +1,0 @@
-class Earn < ApplicationRecord
-end
