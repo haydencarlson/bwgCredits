@@ -1,8 +1,9 @@
 <div class="wrapper">
 	<div class="container" style="margin-top: 140px;">
-		<h1 class="sessionsTitle">Log into your account</h1>
+		<h1 class="sessionsTitle" style="color:white;">Log into your account</h1>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			<%= devise_error_messages_for(resource) %>
       <div class="field">
         <%= f.email_field :email, placeholder: 'Email', autofocus: true %>
       </div>

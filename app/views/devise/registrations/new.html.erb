@@ -4,6 +4,7 @@
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
+      <%= devise_error_messages_for(resource) %>
       <div class="field">
         <%= f.email_field :email, placeholder: "Email", autofocus: true %>
       </div>
@@ -19,8 +20,9 @@
       <div class="actions">
         <%= f.submit "Sign up", style: 'background-color:white;color:#19a8bf;' %>
       </div>
+
       <%= render "devise/shared/links" %>
-      <%= devise_error_messages! %>
+
     <% end %>
 	</div>
 
