@@ -20,8 +20,9 @@
       </ul>
       <% if current_user %>
       <ul class="nav navbar-nav navbar-right">
+        <span style="float: left; margin-top: 15px;color: white;margin-right:15px;">Credit Balance: <%= get_user_credit_balance %></span>
         <li class="dropdown">
-          <%= link_to('Log Out', destroy_user_session_path, method: :delete, class: 'dropdown-toggle') %> 
+          <%= link_to('Log Out', destroy_user_session_path, method: :delete, class: 'dropdown-toggle') %>
         </li>
       </ul>
       <% end %>
