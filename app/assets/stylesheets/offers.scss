@@ -1,12 +1,16 @@
 .offersContainer {
   display: flex;
   justify-content: center;
-}
-.offerItem {
-  height: 210px;
-  width: 300px;
-}
-.offerUrl {
-  display: block;
-  text-align: center;
+  .offerItem {
+    height: 250px;
+    width: 300px;
+  }
+  .offerUrl {
+    display: block;
+    text-align: center;
+  }
+  .completeOfferButton {
+    display: block;
+    margin: auto;
+  }
 }
