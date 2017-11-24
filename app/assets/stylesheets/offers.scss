@@ -14,3 +14,13 @@
     margin: auto;
   }
 }
+
+.offersSidebar {
+  height: 100%;
+  padding-top: 50px;
+  width: 310px;
+  position: fixed;
+  bottom: 0px;
+  background: #222222;
+  z-index: -1;
+}

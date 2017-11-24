@@ -1,3 +1,6 @@
+<div class="offersSidebar">
+
+</div>
 <div class="offersContainer">
   <% @offers.each do |offer| %>
     <div class="offerItem">
@@ -6,7 +9,7 @@
       <a href="<%=offer.url%>"><img class="offerImage" style="display:block;margin:auto;height:110px;width:180px;" src=" <%=offer.image_url%> "/></a>
       <a class="offerUrl" href="<%=offer.url%>"><%=offer.url%></a>
       <p style="text-align:center;"><b><%=offer.reward_amount%> credits rewarded</b></p>
-      <button class="completeOfferButton">Complete Offer</button>
+      <button class="completeOfferButton btn btn-primary">Complete Offer</button>
     </div>
   <% end %>
 </div>
