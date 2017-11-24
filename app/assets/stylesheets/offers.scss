@@ -1,3 +1,26 @@
-// Place all the styles related to the offers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.offersContainer {
+  display: flex;
+  justify-content: center;
+  .offerItem {
+    height: 250px;
+    width: 300px;
+  }
+  .offerUrl {
+    display: block;
+    text-align: center;
+  }
+  .completeOfferButton {
+    display: block;
+    margin: auto;
+  }
+}
+
+.offersSidebar {
+  height: 100%;
+  padding-top: 50px;
+  width: 310px;
+  position: fixed;
+  bottom: 0px;
+  background: #222222;
+  z-index: -1;
+}
