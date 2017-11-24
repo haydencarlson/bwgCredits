@@ -1,0 +1,10 @@
+<div class="offersContainer">
+  <% @offers.each do |offer| %>
+    <div class="offerItem">
+      <h3 style="text-align:center;"><%=offer.title%></h3>
+      <p style="text-align:center;"><%=offer.description%></p>
+      <img class="offerImage" style="display:block;margin:auto;height:110px;width:180px;" src=" <%=offer.image_url%> "/>
+      <a class="offerUrl" href="<%=offer.url%>"><%=offer.url%></a>
+    </div>
+  <% end %>
+</div>
