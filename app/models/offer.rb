@@ -1,3 +1,3 @@
 class Offer < ApplicationRecord
-  self.per_page = 4
+  paginates_per 8
 end
