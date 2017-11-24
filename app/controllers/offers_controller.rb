@@ -1,5 +1,5 @@
 class OffersController < ApplicationController
   def index
-    @offers = Offer.all
+    @offers = Offer.order(:title).page params[:page]
   end
 end

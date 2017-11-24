@@ -1,8 +1,18 @@
 .offersContainer {
-  display: flex;
+  display:flex;
   justify-content: center;
+  margin-left: 280px;
+  height: 100%;
+  padding-top: 50px;
+
+  .offers {
+    display: flex;
+   align-items: center;
+   flex-flow: row wrap;
+   max-width: 1200px;
+  }
   .offerItem {
-    height: 250px;
+    height: 300px;
     width: 300px;
   }
   .offerUrl {
@@ -14,11 +24,15 @@
     margin: auto;
   }
 }
+.pagination {
+  position: absolute;
+  bottom: 0px;
+}
 
 .offersSidebar {
   height: 100%;
   padding-top: 50px;
-  width: 310px;
+  width: 280px;
   position: fixed;
   bottom: 0px;
   background: #222222;

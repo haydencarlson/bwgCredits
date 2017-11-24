@@ -244,6 +244,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.5)
   jquery-rails
+  kaminari
   mysql2
   puma (~> 3.7)
   rails (~> 5.1.4)
