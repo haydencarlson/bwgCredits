@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :redeems
   resources :credits
   resources :offers
   devise_for :admin_users, ActiveAdmin::Devise.config
