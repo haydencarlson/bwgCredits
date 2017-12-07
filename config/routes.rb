@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :redeems
   resources :credits
   resources :offers
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
   resources :earns
   devise_for :users
+  root "offers#index"
   devise_scope :user do
     authenticated :user  do
       root to: 'offers#index'
